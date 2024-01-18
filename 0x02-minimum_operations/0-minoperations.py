@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 '''
 Calculates the fewest number of operations needed to result in n H characters
+by calculating the sum of the prime factors of n.
 '''
 
 
