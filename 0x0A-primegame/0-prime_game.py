@@ -3,6 +3,7 @@
 
 
 def is_prime(num):
+    """Function to get who has won in prime game"""
     if num < 2:
         return False
     for i in range(2, int(num ** 0.5) + 1):
@@ -12,6 +13,7 @@ def is_prime(num):
 
 
 def optimal_move(nums):
+    """Function to get who has won in prime game"""
     # Sort the list of numbers in reverse order
     nums.sort(reverse=True)
 
@@ -25,6 +27,7 @@ def optimal_move(nums):
 
 
 def isWinner(x, nums):
+    """Function to get who has won in prime game"""
     maria_wins = 0
     ben_wins = 0
 
