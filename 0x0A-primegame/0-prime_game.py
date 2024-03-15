@@ -10,10 +10,11 @@ def is_prime(num):
             return False
     return True
 
+
 def optimal_move(nums):
     # Sort the list of numbers in reverse order
     nums.sort(reverse=True)
-    
+
     # Iterate through the sorted list
     for num in nums:
         # If the number is prime, return it
@@ -22,14 +23,15 @@ def optimal_move(nums):
     # If no prime number is found, return None
     return None
 
+
 def isWinner(x, nums):
     maria_wins = 0
     ben_wins = 0
-    
+
     for n in nums:
         # Count the number of prime numbers in the current set
         prime_count = sum(1 for num in range(1, n + 1) if is_prime(num))
-        
+
         # If there are an odd number of primes, Maria wins
         if prime_count % 2 == 1:
             maria_wins += 1
